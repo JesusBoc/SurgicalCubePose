@@ -71,7 +71,7 @@ def sphere_analysis(n_example):
     ax = fig2.add_subplot(projection='3d')
     ax.scatter3D(xyz.T[0], xyz.T[1], xyz.T[2], color="black", label="points")
 
-    # Adjust the bounding box so that the sphere is visible without distortion
+    # Adjust the bounding box so that the sphere is visible with less distortion
     offset = parameters[3]*1.2
     ax.set_xlim(parameters[0] - offset, parameters[0] + offset)
     ax.set_ylim(parameters[1] - offset, parameters[1] + offset)
